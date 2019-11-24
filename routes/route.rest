@@ -6,10 +6,27 @@ GET http://localhost:3000/subscribers/1
 
 ###
 
+GET http://localhost:3000/subscribers/5dda6ac3ec1e108f037abd8b
+
+###
+
 POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
   "name": "Daniel",
   "subscribedToChannel": "Jenna Marbles"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/5dda6ac3ec1e108f037abd8b
+
+###
+
+PATCH   http://localhost:3000/subscribers/5dda6e4bb64e619159ddc669
+Content-Type: application/json
+
+{
+  "name": "Joan"
 }
